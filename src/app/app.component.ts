@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from "./user.service";
-import {PageService} from "./page.service";
+import {UserService} from './user.service';
+import {PageService} from './page.service';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.userInfo = this.userService.getUserInfo();
     this.pageInfo = this.pageService.getPageInfo();
-    document.getElementById("body").style.backgroundImage = "url('" + this.pageInfo['backgroundImage'] + "')";
+    document.getElementById('body').style.backgroundColor = 'red';
+    // document.getElementById("body").style.backgroundImage = "url('" + this.pageInfo['backgroundImage'] + "')";
   }
 }

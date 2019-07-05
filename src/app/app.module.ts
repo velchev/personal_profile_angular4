@@ -22,9 +22,10 @@ import { ToolsComponent } from './body/abilities/tools/tools.component';
 import { ProjestListComponent } from './body/projects/projest-list/projest-list.component';
 import { ProjestItemComponent } from './body/projects/projest-list/projest-item/projest-item.component';
 import { SocialAccountsComponent } from './body/contact/social-accounts/social-accounts.component';
-import {UserService} from "./user.service";
-import {PageService} from "./page.service";
+import {UserService} from './user.service';
+import {PageService} from './page.service';
 import { CertificatesComponent } from './body/experiences/certificates/certificates.component';
+import { SkillProgressComponent } from './body/abilities/skills/skill-progress.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CertificatesComponent } from './body/experiences/certificates/certifica
     ProjestListComponent,
     ProjestItemComponent,
     SocialAccountsComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    SkillProgressComponent
   ],
   imports: [
     BrowserModule
